@@ -26,15 +26,12 @@
 - ResultService
 - [ ] : strike, ball, nothing 결과 실행
 
-- RestartService
-- [ ] : 재시작 / 종료를 구분
-
 - 입/출력
 
 - BaseBallBusinessValidator
-- [ ] : 컴퓨터 숫자가 3자리인지 확인
-- [ ] : 컴퓨터 숫자가 1 ~ 9 숫자인지 확인
-- [ ] : 컴퓨터 숫자가 서로 다른 숫자인지 확인
+- [ ] : 사용자 숫자가 3자리인지 확인
+- [ ] : 사용자 숫자가 1 ~ 9 숫자인지 확인
+- [ ] : 사용자 숫자가 서로 다른 숫자인지 확인
 - [ ] : 재시작 / 종료 숫자가 1 / 2인지 확인
 
 - BaseBallInputView
