@@ -16,12 +16,15 @@
 - NumberGenerator
 - [ ] : 1 ~ 9 사이 서로 다른 랜덤 3개 추출
 
-- ComputerNumberService
-- [ ] : NumberGenerator 로 숫자 생성
+- NumberService
+- [ ] : NumberGenerator 로 컴퓨터 숫자 생성
+- [ ] : 입력값으로 사용자 숫자 생성
 
-- BaseBallService
+- MatchService
 - [ ] : 컴퓨터 숫자와 입력된 숫자 비교
 - [ ] : 비교 결과에 맞는 로직 실행
+
+- RestartService
 - [ ] : 재시작 / 종료를 구분
 
 - 입/출력
