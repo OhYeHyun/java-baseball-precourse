@@ -1,6 +1,7 @@
 package baseball.domain;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 
@@ -34,5 +35,9 @@ public class GameResults {
 
     private GameResultType findResultType(String name) {
         return gameResults.stream().filter(type ->  Objects.equals(type.getName(), name)).findFirst().get();
+    }
+
+    public List<GameResultType> getGameResults() {
+        return Collections.unmodifiableList(gameResults);
     }
 }

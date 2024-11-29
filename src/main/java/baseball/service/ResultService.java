@@ -1,6 +1,8 @@
 package baseball.service;
 
+import baseball.domain.GameResultType;
 import baseball.domain.GameResults;
+import java.util.List;
 
 public class ResultService {
     private final GameResults results;
@@ -27,5 +29,9 @@ public class ResultService {
 
     public boolean guessAll() {
         return results.guessAll();
+    }
+
+    public List<GameResultType> getGameResults() {
+        return results.getGameResults();
     }
 }
