@@ -1,6 +1,7 @@
 package baseball.service;
 
 import baseball.domain.NumberGenerator;
+import baseball.validator.BaseBallBusinessValidator;
 import java.util.Collections;
 import java.util.List;
 
@@ -12,8 +13,9 @@ public class NumberService {
         computerNumber = NumberGenerator.numberGenerate(3);
     }
 
-    public void generateUserNumber(String number) {
-        number.chars().forEach(num -> userNumber.add(num));
+    public void generateUserNumber(List<Integer> number) {
+        BaseBallBusinessValidator.validateUserNumber(number);
+        userNumber = number;
     }
 
     public List<Integer> getComputerNumber() {
