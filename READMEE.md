@@ -22,7 +22,9 @@
 
 - MatchService
 - [ ] : 컴퓨터 숫자와 입력된 숫자 비교
-- [ ] : 비교 결과에 맞는 로직 실행
+
+- ResultService
+- [ ] : strike, ball, nothing 결과 실행
 
 - RestartService
 - [ ] : 재시작 / 종료를 구분
