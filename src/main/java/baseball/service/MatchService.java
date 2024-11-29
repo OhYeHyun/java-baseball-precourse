@@ -25,7 +25,9 @@ public class MatchService {
                     resultService.ball();
                 }
             }
-            nothingCount++;
+            if (!computerNumber.contains(curNum)) {
+                nothingCount++;
+            }
         }
         if (nothingCount == 3) {
             resultService.nothing();
