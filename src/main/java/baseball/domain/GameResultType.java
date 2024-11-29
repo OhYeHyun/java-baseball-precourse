@@ -9,8 +9,8 @@ public class GameResultType {
         this.amount = amount;
     }
 
-    public void setAmount(int amount) {
-        this.amount = amount;
+    public void increase() {
+        this.amount += 1;
     }
 
     public String getName() {

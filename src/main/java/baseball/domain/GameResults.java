@@ -2,6 +2,7 @@ package baseball.domain;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class GameResults {
     private static final GameResults instance = new GameResults();
@@ -17,7 +18,12 @@ public class GameResults {
         gameResults.add(resultType);
     }
 
-    public void setResult(GameResultType resultType, int amount) {
-        resultType.setAmount(amount);
+    public void increase(String name) {
+        GameResultType resultType = findResultType(name);
+        resultType.increase();
+    }
+
+    public GameResultType findResultType(String name) {
+        return gameResults.stream().filter(type ->  Objects.equals(type.getName(), name)).findFirst().get();
     }
 }
