@@ -20,4 +20,8 @@ public class GameResultType {
     public int getAmount() {
         return amount;
     }
+
+    public void reset() {
+        amount = 0;
+    }
 }

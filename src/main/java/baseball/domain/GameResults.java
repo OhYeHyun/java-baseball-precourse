@@ -23,7 +23,11 @@ public class GameResults {
         resultType.increase();
     }
 
-    public GameResultType findResultType(String name) {
+    public void reset() {
+        gameResults.forEach(GameResultType::reset);
+    }
+
+    private GameResultType findResultType(String name) {
         return gameResults.stream().filter(type ->  Objects.equals(type.getName(), name)).findFirst().get();
     }
 }

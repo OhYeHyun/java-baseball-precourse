@@ -9,6 +9,10 @@ public class ResultService {
         this.results = results;
     }
 
+    public void reset() {
+        results.reset();
+    }
+
     public void strike() {
         results.increase("스트라이크");
     }

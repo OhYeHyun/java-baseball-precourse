@@ -12,6 +12,8 @@ public class MatchService {
     }
 
     public void compare(List<Integer> userNumber) {
+        resultService.reset();
+
         int nothingCount = 0;
         for (int i = 0; i < userNumber.size(); i++) {
             int curNum = userNumber.get(i);
