@@ -24,4 +24,8 @@ public class ResultService {
     public void nothing() {
         results.increase("낫싱");
     }
+
+    public boolean guessAll() {
+        return results.guessAll();
+    }
 }
